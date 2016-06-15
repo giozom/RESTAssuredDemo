@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="2926" started-at="2016-06-15T01:09:38Z" finished-at="2016-06-15T01:09:40Z">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="2926" started-at="2016-06-15T01:09:38Z" finished-at="2016-06-15T01:09:40Z">
+      <class name="APITest">
+        <test-method status="PASS" signature="testStatus()[pri:0, instance:testStatus(APITest)]" name="testStatus" duration-ms="2867" started-at="2016-06-15T11:09:38Z" finished-at="2016-06-15T11:09:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStatus -->
+      </class> <!-- APITest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

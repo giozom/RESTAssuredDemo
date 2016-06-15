@@ -1,0 +1,8 @@
+
+
+    /GET http://jsonplaceholder.typicode.com/posts
+    //GET http://jsonplaceholder.typicode.com/posts/1
+    //GET http://jsonplaceholder.typicode.com/posts/1/comments
+    //GET http://jsonplaceholder.typicode.com/comments?postId=1
+    //POST http://jsonplaceholder.typicode.com/posts
+    //PUT http://jsonplaceholder.typicode.com/posts/1
