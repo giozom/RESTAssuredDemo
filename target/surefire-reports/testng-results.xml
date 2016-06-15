@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="2926" started-at="2016-06-15T01:09:38Z" finished-at="2016-06-15T01:09:40Z">
+  <suite name="Surefire suite" duration-ms="4607" started-at="2016-06-15T04:10:53Z" finished-at="2016-06-15T04:10:58Z">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="2926" started-at="2016-06-15T01:09:38Z" finished-at="2016-06-15T01:09:40Z">
+    <test name="Surefire test" duration-ms="4607" started-at="2016-06-15T04:10:53Z" finished-at="2016-06-15T04:10:58Z">
       <class name="APITest">
-        <test-method status="PASS" signature="testStatus()[pri:0, instance:testStatus(APITest)]" name="testStatus" duration-ms="2867" started-at="2016-06-15T11:09:38Z" finished-at="2016-06-15T11:09:40Z">
+        <test-method status="PASS" signature="verifyTitleInResponseBody()[pri:0, instance:verifyTitleInResponseBody(APITest)]" name="verifyTitleInResponseBody" duration-ms="2384" started-at="2016-06-15T14:10:53Z" finished-at="2016-06-15T14:10:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testStatus -->
+        </test-method> <!-- verifyTitleInResponseBody -->
+        <test-method status="PASS" signature="verifyResponseType()[pri:0, instance:verifyResponseType(APITest)]" name="verifyResponseType" duration-ms="1336" started-at="2016-06-15T14:10:56Z" finished-at="2016-06-15T14:10:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyResponseType -->
+        <test-method status="PASS" signature="verifyStatus()[pri:0, instance:verifyStatus(APITest)]" name="verifyStatus" duration-ms="819" started-at="2016-06-15T14:10:57Z" finished-at="2016-06-15T14:10:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStatus -->
       </class> <!-- APITest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->

@@ -1,8 +1,13 @@
 
 import io.restassured.http.ContentType;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
 import org.junit.Test;
+
+import java.util.List;
+import java.util.StringTokenizer;
+
 import static io.restassured.RestAssured.*;
 import static io.restassured.matcher.RestAssuredMatchers.*;
 import static org.hamcrest.Matchers.*;
@@ -65,10 +70,36 @@ public class APITest {
         */
 
         String bodyTitle = response.path("title");
+        assertNotNull(bodyTitle);
         assertTrue(bodyTitle.equals("sunt aut facere repellat provident occaecati excepturi optio reprehenderit"));
         System.out.println("title in body is: " +bodyTitle);
 
 
+    }
+
+    @Test
+    public void verifyResponseBodyCount(){
+
+        String path2 = "/users";
+        String url = baseURL + path2;
+
+        Response response  = given()
+                .get(url);
+
+        List<String> addresses = response.path("address.street");
+
+
+
+        //response should return 10 street names
+        assertTrue(addresses.size() == 10);
+
+        int statusCode = get(url).getStatusCode();
+        assertTrue(statusCode == 200);
+
+
+        System.out.println("verifyResponseBodyCount url: " + url);
+        System.out.println("verifyResponseBody: " + addresses);
+        System.out.println("statusCode: " + statusCode);
     }
 
 
